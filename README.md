@@ -6,6 +6,7 @@
 System designed to analyze the health of the vegetation of urban areas through a UAV.
 
 ##Software requirements
+
 ###Operating System
 * MacOSX 10.12.0 - 10.14.0
 * Linux Ubuntu 16.04 LTS
