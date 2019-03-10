@@ -1,18 +1,17 @@
-#Deep Green Diagnostics
+# Deep Green Diagnostics
 ----------------------------
-#Readme
+# Readme
 
-##Description
+## Description
 System designed to analyze the health of the vegetation of urban areas through a UAV.
 
-##Software requirements
-
-###Operating System
+## Software requirements
+### Operating System
 * MacOSX 10.12.0 - 10.14.0
 * Linux Ubuntu 16.04 LTS
 * Windows 10
 
-###Software needed
+### Software needed
 * python 3.6
 * Anaconda2-5.2.0
 * Tensorflow 1.8.0
@@ -62,7 +61,7 @@ __Use the package manager conda to install scikit-learn__
 
 `conda install -n yourenvname scikit-learn`
 
-##Hardware requirements
+## Hardware requirements
 
 - UAV of the DJI family with a 12 megapixel camera.
 (The most recommended is the drone phantom 4 or higher).
@@ -100,7 +99,7 @@ You can find the complete code in this path:
  
  `./DGD_ENG⁩/View⁩/VistaInicio.py`
 
-##Usage
+## Usage
 For a quick start follow the steps below and watch the video.
 
 __Step 1:__ Take the photos with the drone and the [Pix4D capture©](https://www.pix4d.com/product/pix4dcapture)  application.
@@ -143,7 +142,7 @@ __Step 5:__ Execute the script TT\_cultivos_main.py
 	
 You'll see the main window ![main_window](./Readme/main_window.png )
 
-###New
+### New
 Choose the option __New__ when you've never done an analysis with your images, this option will propagate the images in the neural network and it will take around 20 minutes for each 30 images.
 
 Remember that if you want to analize a new map you must copy your photos in a new directory within the _Images_ directory.
@@ -151,16 +150,16 @@ Remember that if you want to analize a new map you must copy your photos in a ne
 Then you can choose the photos and the neural network with which you want to analyze the map.
 ![load_window](./Readme/main_window_images.png )
 
-###Load
+### Load
 Choose the option __Load__ when you have a previous analysis and the file with extension .p.
 
 In the ZIP file is a directory with some examples maps that you can try with the __load__ option.
 
-###Retrain
+### Retrain
 Choose the option __Re-train__ when you want to improve the accuracy of the neural network with your own drone images.
 ![load_window](./Readme/retrain_window.png )
 
-####Prepare the dataset
+#### Prepare the dataset
 
 The input images for training must be of size 200 x 200 pixels and they must be in .JPG format as well.
 If you don't have the pieces of the image, press the _Cut Images_ button to prepare your images. The system will cut the image of 12,000 pixels in 300 pieces and it will rename them.
@@ -177,7 +176,7 @@ The example of how the CSV file is to be seen is shown below.
  
 ![CSV_format](./Readme/CSV_format.png ) 
 
-####Dataset ready
+#### Dataset ready
 
 If you have the images in a directory with the correct size  and __all of them with their tags__ continue with the next steps and see the image below:
 
@@ -193,18 +192,18 @@ Wait for the system and finally you'll see a window like this:
 
 ![Accuracy_window](./Readme/Accuracy_window.png )
 
-The current accuracy is __72.18%__
+The current accuracy is __72.03%__
 
-##About the neural network
+## About the neural network
 In this project, we use a neural network with __5__ convolutional layers to extract characteristics and __4__ classification layers. To access the files that contain the neural network, follow this path:
 
 	cd DGD_ENG/Model/TT_modelo_RNC30.py
 	
-###Clases
+### Classes
 
 The buttons shown in the map view represent each of the classes separated by colors, the next are exmples of each class.
 
-![clases](./Readme/clases.png )
+![classes](./Readme/clases.png )
 
 If you want to tag your own dataset follow the examples above and place the labels in the CSV file as shown in the following table.
 
@@ -218,7 +217,7 @@ If you want to tag your own dataset follow the examples above and place the labe
 To indicate __contamination__ write a number __1__ for contamination and __0__ for no contamination.
 
 
-##Troubleshoot
+## Troubleshoot
 
 __Images without metadata:__ If the images don't have metadata, the system won't be able to analyze them, the system use specific data to work. Those are the _GPS information_, the _RelativeAltitud_ and the _FlightYawDegree_ to construct the map.
 
@@ -231,10 +230,10 @@ __Load a map and the images don't appear:__ This may happen because the images a
 __The accuracy of the network doesn't increase:__ You should take care of the data that you use for feed the neural network, try to follow the examples in the section __About of the neural network__. 
 You can try increasing the value of the number of the epoch. It is very important that you follow the labels as shown in the past examples.
 
-##Contact
+## Contact
 
 For any questions about the system and problem solving
 
 - Anayantzin Paola López Juárez....... anayantzinp9503@gmail.com
 
-- Israel Agustin Vargas Monroy.... vargasmonroyisraelagustin@gmail.com 
+- Israel Agustin Vargas Monroy....vargasmonroyisraelagustin@gmail.com 
