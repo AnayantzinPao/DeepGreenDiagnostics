@@ -1,0 +1,2 @@
+model_checkpoint_path: "AreaVerde30m.ckpt"
+all_model_checkpoint_paths: "AreaVerde30m.ckpt"
