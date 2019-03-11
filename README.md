@@ -236,4 +236,4 @@ For any questions about the system and problem solving
 
 - Anayantzin Paola López Juárez....... anayantzinp9503@gmail.com
 
-- Israel Agustin Vargas Monroy....vargasmonroyisraelagustin@gmail.com 
+- Israel Agustin Vargas Monroy.... vargasmonroyisraelagustin@gmail.com 
