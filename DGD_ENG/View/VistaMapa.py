@@ -604,7 +604,7 @@ class Ui_VistaMapa(QWidget):
               }
             </script>
             <script async defer
-            src="Put_your_API_key_here">
+            src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&callback=initMap">
             </script>
           </body>
         </html>
