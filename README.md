@@ -15,6 +15,7 @@ System designed to analyze the health of the vegetation of urban areas through a
 * python 3.6
 * Anaconda2-5.2.0
 * Tensorflow 1.8.0
+* Google API KEY (Maps JavaScript API)
 
 It is recommended to create a virtual environment in Anaconda before installing the packages listed below.
 
@@ -60,6 +61,24 @@ If you want to search for one of them or look for the packages already installed
 __Use the package manager conda to install scikit-learn__
 
 `conda install -n yourenvname scikit-learn`
+
+### Get Google API KEY
+Follow the instructions to get the API KEY on the Google Developers site, in the section for [Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/get-api-key).
+
+Once you have your API KEY you have to insert it in the code of the system to visualize the GPS localization.
+
+You can access the file through the following path:
+
+	cd ./DGD_ENG/View/VistaMapa.py
+
+In the file, you must to write your key in the "localizacion" method in the 577 line.
+
+Then in line number 607, you will find the source of the API where you will write yours, as you can see in the example below.
+
+```
+src="https://maps.googleapis.com/maps/api/js?key=WRITE_YOUR_API_KEY_HERE&callback=initMap">
+
+```
 
 ## Hardware requirements
 
