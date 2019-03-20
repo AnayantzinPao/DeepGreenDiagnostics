@@ -1,3 +1,5 @@
 AreaVerde30m.ckpt.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
 Pesos.ckpt.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
 Video_DeepGreenDiagnostics.mp4 filter=lfs diff=lfs merge=lfs -text
+CT30mSupFinal.pickle filter=lfs diff=lfs merge=lfs -text
+CT30mPru_901.pickle filter=lfs diff=lfs merge=lfs -text
